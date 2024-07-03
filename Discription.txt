@@ -1,0 +1,37 @@
+TABLEAU TRAINING
+  PROJECT-COMPARATIVE STUDY OF COUNTRIES:
+          IN this project we can use muliple steps and formulas:
+step 1
+   i can upload two data sets 
+      1.global financial devlopment database
+      2.insurance sample datasets
+step2
+   i can use geographical map in sheet1 and i used colour selves,size selves and detail selves and also used filters
+step 3 
+    created KPI table and KPI shapes
+    i can create a two parameters one is selected category and another one is selected year.
+step 4
+     FORMULAS
+     Growth%=avg([Select YYYY])-avg([Previous YYYY])
+     Growth indicators = IF [Growth %]>0.0001 THEN "Positive"
+                         ELSEIF [Growth %]<-0.001 THEN "Negative"
+                         ELSE"No change"
+                         END
+     Previous YYYY = IF INT([Year])=YEAR([Select year]-1)THEN [Selected category]END
+     Select YYYY = IF INT([Year])=YEAR([Select year])THEN [Selected category]END
+     Selected year = CASE[Select category]
+                     WHEN 1 THEN[Life insurance share]
+                     WHEN 2 THEN[Market share > Total]
+                     WHEN 3 THEN[Penetration > Total]
+                     WHEN 4 THEN[Ratio of reinsurance accepted > Total]
+                     WHEN 5 THEN[Retention ratio > Total]
+                     END
+when i change the year or selected category the chart will automatically changed
+kpi shapes i used multiple shapes and put it different colors for positive,negative and no change
+step 5
+ create the Trend line 
+    used line charts and use triangle shapes
+step 6
+     finally i can create the dashboard     i can create a multiple dashboards and different  filters ,fonts ,tittile colors ,size and i create Wikipedia finally i done my project and 
+submited.
+
